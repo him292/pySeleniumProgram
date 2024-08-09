@@ -40,3 +40,13 @@
 - Selenium 4 (W3C) version removed the "JSON wire protocol" (which adds the HTTP request and send to Server)
 and tells the webdriver to handle everything
 - Upgrade can also be done from Selenium 3 to 4
+
+### Selenium Webdriver Architecture (9th AuG)
+
+- Webdriver API is a set of classes and methods that allows you to interact with the browser using the code
+
+- Headless browser - used when?
+  - When we dont need to use UI
+  - if there are alot test cases to cover (Ex: 5000)
+    - These many test cases takes a lot of memory if we go with UI
+

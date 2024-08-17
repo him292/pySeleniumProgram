@@ -50,3 +50,28 @@ and tells the webdriver to handle everything
   - if there are alot test cases to cover (Ex: 5000)
     - These many test cases takes a lot of memory if we go with UI
 
+### WAITS
+
+- Time.sleep() - we dont use it much, its without any condition
+- ImplicitWait() - not used much, because it adds wait to all the elements within the script
+- Explicit Wait() - Mostly used. It waits until a certain condition is met
+- Fluent Wait() - Used with a paramater (poll_frequency=value) when you want to wait for an element in certain
+  interval (like after every second)
+
+
+### Working with Dropdowns
+
+2 Types:
+- Static dropdown
+- Dynamic Dropdown
+
+- Static dropdown
+
+element_select = driver.find_element(By.ID, "dropdown")
+select = Select(element_select
+select.select_by_visible_text("Option 2))
+
+
+- Dynamic Dropdown 
+  - Static with custom controls - controlled by JS executor
+  - Pure dynamic - handled by JS executor, Action classes and Logic

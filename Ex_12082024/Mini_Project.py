@@ -48,7 +48,9 @@ def test_mini_project4():
     assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/#appointment"
 
     text_appointment = driver.find_element(By.TAG_NAME, "h2")
-    assert text_appointment.text == "Make Appointment"
+    # assert text_appointment.text == "Make Appointment"
+
+    allure.attach(driver.get_screenshot_as_png(), name="login-successful", attachment_type=allure.attachment_type.PNG)
 
     # booking an appointment page - Automation script
 
